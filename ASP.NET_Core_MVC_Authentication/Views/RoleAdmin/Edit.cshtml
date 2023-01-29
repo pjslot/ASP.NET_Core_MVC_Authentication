@@ -1,6 +1,6 @@
 ﻿<!--Форма для редактирования информации о пользователях для выбранной роли-->
 @model RoleEditModel
-<div class="bg-primary m-1 р-1 text-white"><h4>Edit Role</h4></div>
+<div class="bg-primary m-1 р-1 text-white"><h4>Правка ролей</h4></div>
 <div asp-validation-summary="All" class="text-danger"></div>
 <form asp-action="Edit" method="post">
 	<input type="hidden" name="roleName" value="@Model.Role.Name" />
@@ -9,7 +9,7 @@
 	<table class="table table-bordered taЬle-sm">
 		@if (Model.NonМembers.Count() == 0)
 		{
-			<tr><td colspan="2">All Users Are Members</td></tr>
+			<tr><td colspan="2">Все пользователи входят в группу ролей</td></tr>
 		}
 		else
 		{
@@ -28,7 +28,7 @@
 	<table class="table table-bordered table-sm">
 		@if (Model.Мembers.Count() == 0)
 		{
-			<tr><td colspan="2">No Users Are Membe rs</td></tr>
+			<tr><td colspan="2">Не обнаружено пользователей с подобными ролями.</td></tr>
 		}
 		else
 		{
