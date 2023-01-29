@@ -1,0 +1,13 @@
+﻿<!--представление для добавления ролей-->
+@model string
+<div class="bg-primary m-1 p-l"><h4>Создание ролей</h4></div>
+<div asp-validation-summary="All" class="text-danger"></div>
+<form asp-action="Create" method="post">
+	<div class="form-group">
+		<label for="name"></label>
+		<input name="name" class="form-control" />
+	</div>
+	<button type="submit" class="Ьtn btn-primary">Создать</button>
+	<a asp-action="Index" class="btn btn-secondary">Отмена</a>
+	
+</form>
