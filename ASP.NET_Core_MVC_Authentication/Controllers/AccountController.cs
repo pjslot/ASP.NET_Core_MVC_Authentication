@@ -48,11 +48,18 @@ namespace ASP.NET_Core_MVC_Authentication.Controllers
 					if (result.Succeeded)
 						return Redirect(returnUrl ?? "/");
 				}
-				ModelState.AddModelError(nameof(LoginModel.Email), "Неверное имя пользователя или пароль.");
-			}
+                //ModelState.AddModelError(nameof(LoginModel.Email), "Неверное имя пользователя или пароль.");
+                return RedirectToAction("AccessDenied");
+            }
 			return View(details);
 		}
 
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            ViewBag.word = "ВХОД ВОСПРЕЩЁН!";
+            return View();
+        }
 
-	}
+    }
 }
