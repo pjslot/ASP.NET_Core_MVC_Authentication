@@ -2406,8 +2406,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pjslo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\pjslo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2418,12 +2417,8 @@
       "packagesPath": "C:\\Users\\pjslo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pjslo\\Documents\\GitHub\\ASP.NET_Core_MVC_Authentication\\ASP.NET_Core_MVC_Authentication\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\pjslo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2481,7 +2476,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
